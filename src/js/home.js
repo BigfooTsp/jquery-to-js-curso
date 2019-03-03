@@ -1,3 +1,6 @@
+//*********************************************************************************
+//           APUNTES INICIALES
+//*********************************************************************************
 console.log('hola mundo!');
 const noCambia = "Leonidas";
 
@@ -43,7 +46,7 @@ Promise.race([
 })
 
 
-
+// Obtener usuario random
 $.ajax('https://randomuser.me/api/sdfdsfdsfs', {
   method: 'GET',
   success: function(data) {
@@ -66,7 +69,9 @@ fetch('https://randomuser.me/api/dsfdsfsd')
     console.log('algo falló')
   });
 
-
+//*********************************************************************************
+//           FUNCIONES ASÍNCRONAS
+//*********************************************************************************
 (async function load() {
   // await
   // action
@@ -203,13 +208,6 @@ fetch('https://randomuser.me/api/dsfdsfsd')
   const $animationContainer = document.getElementById('animation');
   renderMovieList(animationList, $animationContainer, 'animation');
 
-
-
-
-
-
-
-
   // const $home = $('.home .list #item');
   const $modal = document.getElementById('modal');
   const $overlay = document.getElementById('overlay');
@@ -255,8 +253,4 @@ fetch('https://randomuser.me/api/dsfdsfsd')
     $modal.style.animation = 'modalOut .8s forwards';
 
   }
-
-
-
-
 })()
